@@ -1,23 +1,12 @@
-@extends('layouts.app')
+@extends('home2')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center align-items-center" style="height: 70vh;">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Home') }}</div>
+<div class="pd-30">
+    <h4 class="tx-gray-800 mg-b-5">Home</h4>
+    {{--    <p class="mg-b-0">Do big things with Bracket, the responsive bootstrap 4 admin template.</p> --}}
+</div><!-- d-flex -->
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                        {{__('Welcome,')}}
-                    {{ __('You are logged in !') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="br-pagebody mg-t-5 pd-x-30">
+
+</div><!-- br-pagebody -->
 @endsection
